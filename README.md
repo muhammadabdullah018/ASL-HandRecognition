@@ -2,7 +2,7 @@
 
 Real-time recognition of static ASL fingerspelling letters from a webcam — hold a letter, it locks in, words spell themselves out on screen.
 
-**[ demo GIF goes here ]**
+**<img width="800" height="470" alt="bandicam2026-07-1701-22-58-759-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/5682f48e-1069-4325-9cc3-05f77c43be31" />**
 
 ---
 
