@@ -6,9 +6,6 @@
 Hold a letter → it locks in → words spell themselves out on screen.
 
 
-**<img width="800" height="470" alt="bandicam2026-07-1701-22-58-759-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/5682f48e-1069-4325-9cc3-05f77c43be31" />**
-
-
 
 <p>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
