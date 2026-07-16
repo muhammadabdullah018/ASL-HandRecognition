@@ -1,13 +1,4 @@
-"""
-Typography. cv2.putText only has the built-in Hershey stroke fonts - they're
-why every OpenCV demo looks like a lab prototype instead of a product. This
-loads real variable fonts (Inter for UI text, JetBrains Mono for numeric
-readouts) once and caches instances per (size, weight).
 
-Both are open-source (SIL OFL, see assets/fonts/OFL-*.txt) and both ship as
-single variable-font files, so "weight" is an axis we set at load time
-rather than a separate file per weight.
-"""
 from __future__ import annotations
 
 from functools import lru_cache

@@ -1,24 +1,4 @@
 """
-OPTIONAL. Convert a folder-per-class image dataset (e.g. Kaggle ASL Alphabet)
-into landmarks.csv, so you can bootstrap without recording everything yourself.
-
-    python dataset_from_images.py /path/to/asl_alphabet_train --per-class 300
-
-Expects:
-    root/A/*.jpg   root/B/*.jpg   ...
-
-READ THIS BEFORE YOU BOTTLE OUT OF RECORDING YOUR OWN DATA
-----------------------------------------------------------
-Public ASL image sets are a worse starting point than they look:
-
-  - most are tightly cropped to the hand, and MediaPipe's palm detector wants
-    some context around it. Expect to silently lose 20-50% of images to
-    "no hand found". That's normal, not a bug in this script.
-  - they're other people's hands, other cameras, other lighting. A landmark
-    model trained on them transfers to YOUR webcam worse than 150 frames of
-    your own hand does.
-  - Sign Language MNIST is 28x28 grayscale. MediaPipe cannot use it at all.
-    Don't bother.
 
 Use this to pre-train and then top up with your own bursts, or use it if you
 truly can't record. Otherwise collect_data.py wins for this project.

@@ -4,9 +4,7 @@ Step 2. Record training samples from your webcam.
 Usage:
     python collect_data.py
 
-Press a letter key (a..y, no j/z) -> 3s countdown -> it records 150 frames
-while you hold the sign. Appends to data/landmarks.csv, so you can quit and
-come back, or top up a single bad letter later without redoing everything.
+
 
 WHILE RECORDING, MOVE. Tilt the hand, rotate the wrist, drift nearer and
 further, shift left and right in frame. 150 identical frames teach the model
@@ -158,6 +156,8 @@ def main():
                 print(f"get ready: {ch}")
             elif ch in ("J", "Z"):
                 print("J and Z need motion - not supported by a single-frame model")
+
+
 
     cap.release()
     cv2.destroyAllWindows()

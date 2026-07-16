@@ -1,6 +1,4 @@
-"""
-Central config. Change things here, not in the scripts.
-"""
+
 from pathlib import Path
 
 ROOT = Path(__file__).parent
