@@ -1,0 +1,16 @@
+# Generated/downloaded, not source
+data/
+models/
+__pycache__/
+*.pyc
+
+# Scratch screenshots from UI development, not project output
+outputs/ui_preview*.png
+outputs/spell_mode_screenshot.png
+
+# Private, not project content
+linkedin_post_prompt.txt
+
+# OS cruft
+.DS_Store
+Thumbs.db
