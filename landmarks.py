@@ -1,17 +1,7 @@
 """
 The only file that talks to MediaPipe. Everything else consumes 63 floats.
 
-Two things in here that most tutorials get wrong:
 
-1. ASPECT RATIO. MediaPipe returns x,y in [0,1] relative to WIDTH and HEIGHT
-   separately. On a 1280x720 frame that means x and y are on different pixel
-   scales, so a square hand comes out stretched. We correct x by W/H before
-   doing anything else. Skip this and your features silently depend on webcam
-   resolution.
-
-2. HANDEDNESS + MIRRORING. We flip the frame for a selfie view, so MediaPipe's
-   "Left"/"Right" label comes out inverted. We swap it back, then mirror left
-   hands into right-hand space so one model covers both hands.
 """
 from __future__ import annotations
 
